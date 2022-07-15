@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentHome">
 
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="ui.FragmentHome"
+        android:label="FragmentHome" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentZwei"
+            app:destination="@id/fragmentZwei" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentDrei"
+            app:destination="@id/fragmentDrei" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentZwei"
+        android:name="ui.FragmentZwei"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment_zwei" />
+    <fragment
+        android:id="@+id/fragmentDrei"
+        android:name="ui.FragmentDrei"
+        android:label="fragment_drei"
+        tools:layout="@layout/fragment_drei" />
 </navigation>

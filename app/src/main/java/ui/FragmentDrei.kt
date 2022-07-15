@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.example.fragmente22.R
-import com.example.fragmente22.databinding.FragmentZweiBinding
 
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
-class FragmentZwei : Fragment() {
+class FragmentDrei : Fragment() {
 
-    private lateinit var binding: FragmentZweiBinding
-
+    private lateinit var binding: FragmentDrei
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,15 +26,13 @@ class FragmentZwei : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_zwei, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_drei, container, false)
 
         return binding.root
     }
 
-    //TODO: onViewcreated
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.imageView.setImageResource(R.drawable.chilli1)
+        binding.imageView2
     }
 
-    }
-
+}
