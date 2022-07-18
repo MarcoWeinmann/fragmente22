@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.example.fragmente22.R
+import com.example.fragmente22.databinding.FragmentDreiBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
 class FragmentDrei : Fragment() {
 
-    private lateinit var binding: FragmentDrei
+    private lateinit var binding: FragmentDreiBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
